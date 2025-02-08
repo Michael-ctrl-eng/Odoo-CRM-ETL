@@ -1,0 +1,11 @@
+export RAPIDAPI_API_KEY="YOUR_RAPIDAPI_KEY"
+export AWS_ACCESS_KEY_ID="YOUR_AWS_ACCESS_KEY_ID"
+export AWS_SECRET_ACCESS_KEY="YOUR_AWS_SECRET_ACCESS_KEY"
+export AWS_S3_BUCKET_NAME="your-s3-bucket-name"
+export ODOO_URL="http://your-odoo-instance.com" # or https://...
+export ODOO_DB_NAME="your_odoo_db_name"
+export ODOO_USERNAME="your_odoo_username"
+export ODOO_PASSWORD="your_odoo_password"
+# Optional environment variables (defaults provided if not set)
+export LOG_LEVEL="INFO" # or DEBUG, WARNING, ERROR, CRITICAL
+export LOG_FILE="odoo_etl_pipeline.log"
