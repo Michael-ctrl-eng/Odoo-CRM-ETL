@@ -113,3 +113,39 @@ It is highly recommended to execute the test suite before running the ETL pipeli
 
 ```bash
 pytest tests/
+
+Running the ETL Pipeline
+Local Execution (for Development and Testing):
+
+Execute the main pipeline script directly:
+
+python src/etl/pipeline.py
+Bash
+Airflow Deployment (for Production Scheduling):
+
+Copy dags/odoo_etl_dag.py to your Airflow DAGs directory.
+
+Enable the odoo_rapidapi_etl DAG within the Airflow UI.
+
+Trigger the DAG manually or wait for the scheduled execution.
+
+Monitor DAG execution and task logs via the Airflow UI.
+
+Performance Monitoring Setup
+For comprehensive performance monitoring, integration with Prometheus and Grafana is recommended.
+
+Install and Configure Prometheus: Set up a Prometheus server and configure it to scrape metrics from the ETL pipeline's /metrics endpoint (exposed on http://localhost:8000 when running src/etl/pipeline.py locally).
+
+Install and Configure Grafana: Set up a Grafana instance and add Prometheus as a data source.
+
+Create Grafana Dashboards: Design Grafana dashboards to visualize key metrics such as pipeline duration, stage timings, lead processing counts, and error rates.
+
+Documentation
+Refer to the code comments and inline documentation for detailed information on specific modules and functions. A comprehensive documentation set is under development.
+
+Contributing
+Contributions to enhance the ETL pipeline are welcome. Please fork the repository, create a feature branch, and submit a pull request with your proposed changes. Ensure that all new code is well-tested and documented.
+
+License
+MIT License
+Contact: [Michael] - [michael.makram.zm@gmail.com]
