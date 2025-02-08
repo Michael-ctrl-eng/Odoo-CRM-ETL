@@ -1,0 +1,27 @@
+[rapidapi]
+api_key: "${RAPIDAPI_API_KEY}"
+base_url: "https://api.example-rapidapi.com"
+endpoint: "/leads"
+
+[aws]
+s3_bucket_name: "${AWS_S3_BUCKET_NAME}"
+region_name: "us-east-1"
+access_key_id: "${AWS_ACCESS_KEY_ID}"
+secret_access_key: "${AWS_SECRET_ACCESS_KEY}"
+
+[odoo]
+url: "${ODOO_URL}"
+db: "${ODOO_DB_NAME}"
+username: "${ODOO_USERNAME}"
+password: "${ODOO_PASSWORD}"
+lead_model: "crm.lead"
+xmlrpc_path: "/xmlrpc/2"
+
+[etl]
+transform_batch_size: 100
+odoo_batch_size: 20
+rapidapi_timeout: 10  # seconds
+
+[retry]
+max_attempts: 3
+wait_seconds: 2
