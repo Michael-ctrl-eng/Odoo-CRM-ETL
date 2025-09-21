@@ -145,6 +145,7 @@ Refer to the code comments and inline documentation for detailed information on 
 
 Contributing
 Contributions to enhance the ETL pipeline are welcome. Please fork the repository, create a feature branch, and submit a pull request with your proposed changes. Ensure that all new code is well-tested and documented.
+```
 
 License
 MIT License
